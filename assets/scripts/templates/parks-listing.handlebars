@@ -1,0 +1,18 @@
+<h3>Parks info</h3>
+
+<div id="pagination-wrapper" class="pagination-wrapper"></div>
+<div class="parks-container">
+{{#each parks as |park|}}
+  <section data-id="{{park.Name}}">
+    <div class="park-box">
+    <div class="thumbnail" style="background-image: url('{{park.Image}}')"></div>
+    <hr>
+    <h5 class="park-name">{{park.Name}}</h5>
+      <p class="park-tag">{{park.Location}}, Est. {{park.Established}}</p>
+      <p>{{park.Area}}</p>
+      <p>{{park.[Recreation visitors]}} vistors/yr</p>
+      <p class="park-description">{{park.Description}}</p>
+    </div>
+  </section>
+{{/each}}
+</div>

@@ -5,7 +5,7 @@ const api = require('./api')
 const onGetAllParks = () => {
   api.getAllParks()
     .then(ui.onGetParksSuccess)
-    .catch(ui.onGetParksFailure)
+    .catch(console.error)
 }
 
 const addHandlers = event => {
